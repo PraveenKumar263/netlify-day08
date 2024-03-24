@@ -1,152 +1,23 @@
-<!-- 1. Div ,section, article
- 2. Intro to css
- 3.Types of css
- 4.Types of selectors
- 5. Tables and col span attribute..
-
- 1. Create a form which collects the following details
-
- first name
- middle name 
- last name
- email 
- password
- Uplaod a file 
-
-
- deploy the above form in netlify
-
- div was intro in html4
- div represents the division / section in the document
-
-
- section was division's 2.0 version
- grouping the elements under a common elements
-
-article:
-
-
-Intro to css:
-CSS: cascaded style sheet
-
-3 types of CSS ar e there:
-1.inline css
-2.Internal css
-3.External css
-
-Inline CSS:
-It can be applied using the style attribute...
-Syntax: <div style="background-color:green"></div>
-here style represents the attribute...
-
-Internal CSS:
-using the style tag...
-<style>
-
-
-
-</style>
-
-
-here the concept of selectors..
-class
-id selectors
-tag selectors
-* universal selectors
-
-
-
-class selectors:
-Syntax:
-.classname{
-    propertyname:value
-}
-class selectors are used to apply for more than 1 elements
-
-
-when we apply both inline as well as internal css to the same element
-then inlince css will have the highest priority...
-inline css > internal  css >  external css
-
-
-id selector:
-syntax:
-#idname{
-    propertyname:value
-}
-id selector is applicable for only one element 
-id selectors must be unique...
-
-in terms of selectors:
-
-id>class>tag selectors
-
-
-tag selectors:
-syntax:
-tagname{
-    propertyname:value
-}
-
-
-
-!important 
-The keyword is used when you need to override the default priorities... -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-     table,th,td{
-        border: 1px solid black;
-        border-collapse: collapse;
-        text-align: center;
-     }
-    </style>
+    <meta charset="UTF-8">    
+    <title>Html class</title>
 </head>
-
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>State of health</th>
-                <th colspan="2">Fasting value</th>
-                <th>After Remaining</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td></td>
-                <td style="font-weight: bold;">Minimum</td>
-                <td style="font-weight: bold;">Normal</td>
-                <td style="font-weight: bold;">2 hours of Eating</td>
-            </tr>
-
-            <tr>
-                <td>healthy</td>
-                <td>70</td>
-                <td>100</td>
-                <td>Less than 140</td>
-            </tr>
-
-            <tr>
-                <td>Pre-diabetes</td>
-                <td>101</td>
-                <td>126</td>
-                <td>140 to 200</td>
-            </tr>
-
-            <tr>
-                <td>Diabetes</td>
-                <td>more than 126</td>
-                <td>Not Applicable</td>
-                <td>More than 200</td>
-            </tr>
-        </tbody>
-    </table>
+    <form>
+     <label for="firstName">First Name</label><br>
+     <input type="text" name="firstName" id="firstName"><br>
+     <label for="middleName">Middle Name</label><br>
+     <input type="text" name="middleName" id="middleName"><br>
+     <label for="lastName">Last Name</label><br>
+     <input type="text" name="lastName" id="lastName"><br>
+     <label for="email">Email</label><br>
+     <input type="email" name="email" id="email"><br>
+     <label for="password">Password</label><br>
+     <input type="password" name="password" id="password"><br>
+     <label for="uploadFile">Upload File</label><br>
+     <input type="file" name="" id="uploadFile">
+    </form>
 </body>
 </html>
